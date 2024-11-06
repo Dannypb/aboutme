@@ -1117,7 +1117,7 @@ section {
 /* -----------------------------------------------
 Estilo para el contenedor del iframe 
 --------------------------------------------------*/
-#iframeContainer {
+/* #iframeContainer {
   display: none;
   position: fixed;
   top: 10%;
@@ -1137,7 +1137,7 @@ Estilo para el contenedor del iframe
   font-size: 30px;
   font-weight: bold;
   cursor: pointer;
-}
+} */
 
 /*  */
 
