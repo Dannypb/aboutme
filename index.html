@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#0b0e12">
+
+        <title>BLACKCORE</title>
+
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/components.css">
+
+    </head>
+
+    <body>
+
+        <!-- INTRO CINEMÁTICA -->
+        <section class="intro" id="intro" aria-label="BLACKCORE welcome experience" data-i18n-aria="intro_aria">
+
+            <div class="intro-grid"></div>
+            <div class="intro-vignette"></div>
+
+            <div class="system-status">
+                <span class="status-indicator"></span>
+                <span data-i18n="intro_status">SYSTEM INITIALIZATION</span>
+            </div>
+
+            <div class="core-container">
+
+                <div class="core-ring ring-outer"></div>
+                <div class="core-ring ring-middle"></div>
+                <div class="core-ring ring-inner"></div>
+
+                <div class="core-glow"></div>
+
+                <div class="core-center">
+                    <span class="core-symbol">B</span>
+                </div>
+
+            </div>
+
+            <div class="intro-brand">
+                <p class="intro-eyebrow"><span data-i18n="brand_descriptor">ADVANCED TECHNOLOGY GROUP</span></p>
+                <h1>BLACK<span>CORE</span></h1>
+                <p class="intro-tagline">BEYOND THE KNOWN.</p>
+            </div>
+
+            <div class="loading-area">
+                <div class="loading-label">
+                    <span data-i18n="intro_initializing">INITIALIZING CORE</span>
+                    <span id="loading-percent">00%</span>
+                </div>
+
+                <div class="loading-track">
+                    <div class="loading-progress" id="loading-progress"></div>
+                </div>
+            </div>
+
+            <button class="skip-intro" id="skip-intro">
+                <span data-i18n="intro_skip">SKIP INTRO</span> <span>↗</span>
+            </button>
+
+            <div class="intro-footer">
+                <span>BLACKCORE SYSTEMS</span>
+                <span>EST. 2026</span>
+            </div>
+
+        </section>
+
+        <!-- PÁGINA PRINCIPAL -->
+        <main class="main-page" id="main-page">
+
+            <nav class="navbar">
+                <a href="#" class="nav-brand">BLACK<span>CORE</span></a>
+
+                <div class="nav-links" id="nav-links">
+                    <a href="#about" data-i18n="nav_about">ABOUT</a>
+                    <a href="#capabilities"
+                        data-i18n="nav_capabilities">CAPABILITIES</a>
+                    <a href="#tech-stack" data-i18n="nav_tech">TECH STACK</a>
+                    <a href="#projects" data-i18n="nav_projects">PROJECTS</a>
+                    <a href="#contact" data-i18n="nav_contact">CONTACT</a>
+                    <a href="#resume" data-i18n="nav_resume">RESUME</a>
+                </div>
+
+                <div class="nav-controls">
+                    <button class="language-button" id="language-toggle"
+                        type="button">
+                        ES <span>/</span> EN
+                    </button>
+
+                    <a
+                        class="whatsapp-button"
+                        href="https://wa.me/51966833653"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Contactar por WhatsApp" data-i18n="nav_talk">LET'S TALK ↗</a>
+
+                    <button
+                        class="menu-toggle"
+                        id="menu-toggle"
+                        type="button"
+                        aria-label="Open menu" data-i18n-aria="menu_open"
+                        aria-expanded="false"
+                        aria-controls="nav-links">
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </nav>
+
+            <section class="hero">
+
+                <div class="hero-content">
+
+                    <p class="hero-label">
+                        <span class="status-indicator"></span>
+                        <span data-i18n="hero_label">INDEPENDENT TECHNOLOGY &
+                            ENGINEERING</span>
+                    </p>
+
+                    <h2>
+                        <span data-i18n="hero_line1">ENGINEERING</span><br>
+                        <span data-i18n="hero_line2">WHAT'S NEXT.</span>
+                    </h2>
+
+                    <p class="hero-description" data-i18n="hero_description">
+                        Desarrollamos soluciones digitales, sistemas
+                        inteligentes
+                        y experiencias tecnológicas que transforman ideas en
+                        realidad.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#projects" class="primary-button">
+                            <span data-i18n="hero_cta">EXPLORE PROJECTS</span> ↗
+                        </a>
+
+                        <a href="#about" class="secondary-button"
+                            data-i18n="hero_about">
+                            DISCOVER BLACKCORE
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="hero-decoration">
+                    <div class="hero-orbit orbit-one"></div>
+                    <div class="hero-orbit orbit-two"></div>
+                    <div class="hero-orbit orbit-three"></div>
+                    <div class="hero-core"></div>
+                    <span class="orbit-label" data-i18n="hero_core_label">CORE / 001</span>
+                </div>
+
+                <div class="hero-bottom">
+                    <span data-i18n="hero_bottom_left">SOFTWARE · AI · ENGINEERING</span>
+                    <span data-i18n="brand_tagline">BEYOND THE KNOWN.</span>
+                </div>
+
+            </section>
+
+            <section class="about-section" id="about">
+
+                <div class="section-heading">
+                    <span class="section-index" data-i18n="about_index">01 / ABOUT BLACKCORE</span>
+                    <span class="section-line"></span>
+                    <span class="section-code" data-i18n="about_code">IDENTITY & VISION</span>
+                </div>
+
+                <div class="about-layout">
+
+                    <div class="about-main">
+
+                        <p class="about-eyebrow" data-i18n="about_eyebrow">THE MIND BEHIND THE CORE</p>
+
+                        <h2>
+                            <span data-i18n="about_title_1">TECHNOLOGY</span><br>
+                            <span data-i18n="about_title_2">IS ONLY THE</span><br>
+                            <span data-i18n="about_title_3">BEGINNING.</span>
+                        </h2>
+
+                        <p class="about-description" data-i18n="about_description_1">
+                            Soy ingeniero de software especializado en
+                            inteligencia
+                            artificial, enfocado en desarrollar soluciones
+                            digitales,
+                            sistemas inteligentes y proyectos tecnológicos que
+                            respondan
+                            a necesidades reales.
+                        </p>
+
+                        <p class="about-description" data-i18n="about_description_2">
+                            Mi enfoque combina ingeniería, diseño y pensamiento
+                            estratégico para transformar ideas en productos,
+                            herramientas y experiencias funcionales.
+                        </p>
+
+                        <div class="about-signature">
+                            <span class="signature-line"></span>
+                            <div>
+                                <strong data-i18n="about_director">DIRECTOR / BLACKCORE</strong>
+                                <small>SOFTWARE · AI · ENGINEERING</small>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <aside class="about-profile">
+
+                        <div class="profile-top">
+                            <span data-i18n="about_profile">PERSONNEL FILE</span>
+                            <span class="profile-status" data-i18n="about_active">ACTIVE</span>
+                        </div>
+
+                        <div class="profile-symbol">
+                            <div class="profile-orbit orbit-a"></div>
+                            <div class="profile-orbit orbit-b"></div>
+                            <div class="profile-nucleus">B</div>
+                        </div>
+
+                        <div class="profile-name">
+                            <span data-i18n="about_designation">DESIGNATION</span>
+                            <h3>BLACKCORE<br><span data-i18n="about_director_title">DIRECTOR</span></h3>
+                        </div>
+
+                        <div class="profile-divider"></div>
+
+                        <div class="profile-data">
+                            <div>
+                                <span data-i18n="about_field">FIELD</span>
+                                <strong data-i18n="about_software">SOFTWARE ENGINEERING</strong>
+                            </div>
+
+                            <div>
+                                <span data-i18n="about_specialization">SPECIALIZATION</span>
+                                <strong data-i18n="about_ai">ARTIFICIAL INTELLIGENCE</strong>
+                            </div>
+
+                            <div>
+                                <span data-i18n="about_approach">APPROACH</span>
+                                <strong data-i18n="about_innovation">INNOVATION & DEVELOPMENT</strong>
+                            </div>
+
+                            <div>
+                                <span data-i18n="contact_location">LOCATION</span>
+                                <strong>PERU</strong>
+                            </div>
+                        </div>
+
+                        <div class="profile-footer">
+                            <span>BLACKCORE SYSTEMS</span>
+                            <span>BC / 001</span>
+                        </div>
+
+                    </aside>
+
+                </div>
+
+                <div class="about-bottom">
+                    <span data-i18n="about_bottom_1">THINK DIFFERENTLY.</span>
+                    <span data-i18n="about_bottom_2">BUILD INTELLIGENTLY.</span>
+                    <span data-i18n="about_bottom_3">GO BEYOND.</span>
+                </div>
+
+            </section>
+
+            <section class="capabilities-section" id="capabilities">
+
+                <div class="section-heading">
+                    <span class="section-index" data-i18n="capabilities_index">02 / CAPABILITIES</span>
+                    <span class="section-line"></span>
+                    <span class="section-code" data-i18n="capabilities_code">WHAT WE ENGINEER</span>
+                </div>
+
+                <div class="capabilities-intro">
+                    <div>
+                        <p class="capabilities-eyebrow" data-i18n="capabilities_eyebrow">OUR EXPERTISE</p>
+                        <h2>
+                            <span data-i18n="capabilities_title_1">BUILT TO</span><br>
+                            <span data-i18n="capabilities_title_2">CREATE WHAT'S NEXT.</span>
+                        </h2>
+                    </div>
+
+                    <p class="capabilities-description" data-i18n="capabilities_description">
+                        Integramos ingeniería de software, inteligencia
+                        artificial
+                        y fabricación tecnológica para desarrollar soluciones
+                        que conectan el mundo digital con el mundo real.
+                    </p>
+                </div>
+
+                <div class="capabilities-grid">
+
+                    <article class="capability-card">
+                        <span class="capability-number">01</span>
+                        <div class="capability-icon">⌘</div>
+                        <p class="capability-category" data-i18n="cap_01_category">DIGITAL ENGINEERING</p>
+                        <h3 data-i18n="cap_01_title">Software &amp;<br>Digital Solutions</h3>
+                        <p data-i18n="cap_01_description">
+                            Diseño y desarrollo de productos digitales,
+                            plataformas web y sistemas personalizados.
+                        </p>
+                        <ul>
+                            <li data-i18n="cap_01_item_1">Desarrollo web</li>
+                            <li data-i18n="cap_01_item_2">Aplicaciones y sistemas</li>
+                            <li data-i18n="cap_01_item_3">Diseño UI/UX</li>
+                            <li data-i18n="cap_01_item_4">E-commerce y Shopify</li>
+                        </ul>
+                        <span class="capability-code">BC / DEV-01</span>
+                    </article>
+
+                    <article class="capability-card featured-card">
+                        <span class="capability-number">02</span>
+                        <div class="capability-icon">⌬</div>
+                        <p class="capability-category" data-i18n="cap_02_category">INTELLIGENT SYSTEMS</p>
+                        <h3 data-i18n="cap_02_title">Artificial Intelligence<br>&amp; Automation</h3>
+                        <p data-i18n="cap_02_description">
+                            Integración de inteligencia artificial y
+                            automatización
+                            para optimizar procesos y ampliar capacidades.
+                        </p>
+                        <ul>
+                            <li data-i18n="cap_02_item_1">Soluciones con IA</li>
+                            <li data-i18n="cap_02_item_2">Automatización de procesos</li>
+                            <li data-i18n="cap_02_item_3">Integración de APIs</li>
+                            <li data-i18n="cap_02_item_4">Asistentes inteligentes</li>
+                        </ul>
+                        <span class="capability-code">BC / AI-02</span>
+                    </article>
+
+                    <article class="capability-card">
+                        <span class="capability-number">03</span>
+                        <div class="capability-icon">◇</div>
+                        <p class="capability-category" data-i18n="cap_03_category">PHYSICAL ENGINEERING</p>
+                        <h3 data-i18n="cap_03_title">Engineering &amp;<br>Manufacturing</h3>
+                        <p data-i18n="cap_03_description">
+                            Desarrollo de prototipos, fabricación aditiva
+                            y soluciones técnicas para necesidades reales.
+                        </p>
+                        <ul>
+                            <li data-i18n="cap_03_item_1">Impresión 3D</li>
+                            <li data-i18n="cap_03_item_2">Prototipado funcional</li>
+                            <li data-i18n="cap_03_item_3">Modelado 3D</li>
+                            <li data-i18n="cap_03_item_4">Producción por lotes</li>
+                        </ul>
+                        <span class="capability-code">BC / ENG-03</span>
+                    </article>
+
+                    <article class="capability-card">
+                        <span class="capability-number">04</span>
+                        <div class="capability-icon">⌘</div>
+                        <p class="capability-category" data-i18n="cap_04_category">KNOWLEDGE & SUPPORT</p>
+                        <h3 data-i18n="cap_04_title">Education &amp;<br>Technical Consulting</h3>
+                        <p data-i18n="cap_04_description">
+                            Orientación, formación y acompañamiento
+                            en proyectos y necesidades tecnológicas.
+                        </p>
+                        <ul>
+                            <li data-i18n="cap_04_item_1">Asesoría tecnológica</li>
+                            <li data-i18n="cap_04_item_2">Formación en tecnología</li>
+                            <li data-i18n="cap_04_item_3">Soporte informático</li>
+                            <li data-i18n="cap_04_item_4">Instalación y mantenimiento</li>
+                        </ul>
+                        <span class="capability-code">BC / TECH-04</span>
+                    </article>
+
+                </div>
+
+                <div class="capabilities-footer">
+                    <span data-i18n="capabilities_footer">FOUR DOMAINS. ONE VISION.</span>
+                    <span>BLACKCORE / ENGINEERING DIVISION</span>
+                </div>
+
+            </section>
+
+            <section class="projects-section" id="projects">
+
+                <div class="section-heading">
+                    <span class="section-index" data-i18n="projects_index">03 / SELECTED PROJECTS</span>
+                    <span class="section-line"></span>
+                    <span class="section-code" data-i18n="projects_code">ENGINEERED IN REALITY</span>
+                </div>
+
+                <div class="projects-intro">
+                    <div>
+                        <p class="projects-eyebrow" data-i18n="projects_eyebrow">OUR WORK / 2026</p>
+                        <h2>
+                            <span data-i18n="projects_title_1">IDEAS INTO</span><br>
+                            <span data-i18n="projects_title_2">REALITY.</span>
+                        </h2>
+                    </div>
+
+                    <p data-i18n="projects_description">
+                        Una selección de proyectos donde el diseño, la ingeniería
+                        y la tecnología se convierten en soluciones funcionales.
+                    </p>
+                </div>
+
+                <div class="projects-list">
+
+                    <!-- PROJECT 001 -->
+                    <article class="project-card">
+
+                        <div class="project-visual project-matices">
+                            <div class="project-visual-label">BC / 001 — DIGITAL
+                                COMMERCE</div>
+
+                            <div class="project-preview">
+                                <span
+                                    class="preview-brand">MATICES<span>CAFÉ</span></span>
+                                <span class="preview-subtitle">THE ART OF
+                                    COFFEE</span>
+                                <div class="preview-coffee-circle"></div>
+                                <span class="preview-footer">SPECIALTY COFFEE
+                                    EXPERIENCE</span>
+                            </div>
+
+                            <a href="http://maticescafe.com" target="_blank">
+                                <span class="project-open">↗</span>
+                            </a>
+                            
+                        </div>
+
+                        <div class="project-information">
+                            <div class="project-meta">
+                                <span data-i18n="project_001_category">ECOMMERCE ENGINEERING</span>
+                                <span>01 / 03</span>
+                            </div>
+
+                            <h3>Matices<span>Café</span></h3>
+
+                            <p data-i18n="project_001_description">
+                                Desarrollo y personalización de una tienda
+                                digital
+                                especializada en café. Una experiencia de
+                                comercio
+                                electrónico diseñada para organizar productos,
+                                colecciones y procesos comerciales.
+                            </p>
+
+                            <div class="project-tags">
+                                <span>SHOPIFY</span>
+                                <span>LIQUID</span>
+                                <span>JAVASCRIPT</span>
+                                <span>UI/UX</span>
+                            </div>
+
+                            <div class="project-role">
+                                <span data-i18n="project_role_label">MY ROLE</span>
+                                <strong data-i18n="project_001_role">Dirección · Diseño · Desarrollo · Configuración</strong>
+                            </div>
+                        </div>
+
+                    </article>
+
+                    <!-- PROJECT 002 -->
+                    <article class="project-card">
+
+                        <div class="project-visual project-terroir">
+                            <div class="project-visual-label">BC / 002 — BRAND
+                                EXPERIENCE</div>
+
+                            <div class="project-preview terroir-preview">
+                                <span class="terroir-overline">THE ORIGIN OF
+                                    FLAVOR</span>
+                                <span class="terroir-brand">TERROIR</span>
+                                <span class="terroir-subtitle">SPECIALTY
+                                    COFFEE</span>
+                                <div class="terroir-line"></div>
+                                <span class="terroir-footer">A COFFEE EXPERIENCE
+                                    AT HOME</span>
+                            </div>
+
+                            <a href="https://maticescafe.com/pages/conoceterroir" target="_blank">
+                                <span class="project-open">↗</span>
+                            </a>
+                        </div>
+
+                        <div class="project-information">
+                            <div class="project-meta">
+                                <span data-i18n="project_002_category">DIGITAL COMMERCE</span>
+                                <span>02 / 03</span>
+                            </div>
+
+                            <h3>Terroir</h3>
+
+                            <p data-i18n="project_002_description">
+                                Desarrollo de una experiencia de comercio
+                                digital
+                                para una marca especializada en café.
+                                Personalización
+                                de la tienda, organización del catálogo y
+                                configuración
+                                de su estructura comercial.
+                            </p>
+
+                            <div class="project-tags">
+                                <span>SHOPIFY</span>
+                                <span>LIQUID</span>
+                                <span>CSS</span>
+                                <span>JAVASCRIPT</span>
+                            </div>
+
+                            <div class="project-role">
+                                <span data-i18n="project_role_label">MY ROLE</span>
+                                <strong data-i18n="project_002_role">Dirección · Diseño digital · Desarrollo</strong>
+                            </div>
+                        </div>
+
+                    </article>
+
+                    <!-- PROJECT 003 -->
+                    <article class="project-card">
+
+                        <div class="project-visual project-manufacturing">
+                            <div class="project-visual-label">BC / 003 —
+                                ADDITIVE MANUFACTURING</div>
+
+                            <div class="manufacturing-preview">
+                                <div class="manufacturing-object"></div>
+                                <span class="manufacturing-label">PROTOTYPE /
+                                    3D</span>
+                                <span class="manufacturing-coordinates">X 100.00
+                                    / Y 100.00 / Z 100.00</span>
+                            </div>
+
+                            <span class="project-open">↗</span>
+                        </div>
+
+                        <div class="project-information">
+                            <div class="project-meta">
+                                <span data-i18n="project_003_category">ENGINEERING & PRODUCTION</span>
+                                <span>03 / 03</span>
+                            </div>
+
+                            <h3>3D Manufacturing</h3>
+
+                            <p data-i18n="project_003_description">
+                                Fabricación aditiva orientada al desarrollo de
+                                piezas
+                                funcionales, prototipos y componentes
+                                personalizados,
+                                con capacidad de producción por lotes.
+                            </p>
+
+                            <div class="project-tags">
+                                <span>SOLIDWORKS</span>
+                                <span>BLENDER</span>
+                                <span>FDM</span>
+                                <span>PLA</span>
+                            </div>
+
+                            <div class="project-role">
+                                <span data-i18n="project_role_label">MY ROLE</span>
+                                <strong data-i18n="project_003_role">Dirección técnica · Modelado · Fabricación</strong>
+                            </div>
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <div class="projects-footer">
+                    <span data-i18n="projects_footer">SELECTED WORKS / BLACKCORE</span>
+                    <span>DESIGN. ENGINEER. CREATE.</span>
+                </div>
+
+            </section>
+
+            <section class="tech-section" id="tech-stack">
+
+                <div class="section-heading">
+                    <span class="section-index" data-i18n="tech_index">04 / TECHNOLOGY STACK</span>
+                    <span class="section-line"></span>
+                    <span class="section-code" data-i18n="tech_code">TOOLS & ENVIRONMENTS</span>
+                </div>
+
+                <div class="tech-intro">
+                    <div>
+                        <p class="tech-eyebrow" data-i18n="tech_eyebrow">THE TECHNOLOGY BEHIND THE WORK</p>
+                        <h2>
+                            <span data-i18n="tech_title_1">TOOLS THAT</span><br>
+                            <span data-i18n="tech_title_2">BUILD THE FUTURE.</span>
+                        </h2>
+                    </div>
+
+                    <p data-i18n="tech_description">
+                        Un ecosistema de tecnologías, herramientas y entornos
+                        que utilizamos para diseñar, desarrollar y materializar
+                        soluciones digitales y físicas.
+                    </p>
+                </div>
+
+                <div class="tech-dashboard">
+
+                    <div class="tech-sidebar">
+                        <span class="dashboard-label" data-i18n="tech_dashboard">TECHNOLOGY INDEX</span>
+
+                        <div class="tech-counter">
+                            <strong>05</strong>
+                            <span data-i18n="tech_domains">DOMAINS</span>
+                        </div>
+
+                        <div class="tech-sidebar-line"></div>
+
+                        <span class="tech-system-status">
+                            <span class="status-indicator"></span>
+                            <span data-i18n="tech_active">ECOSYSTEM ACTIVE</span>
+                        </span>
+                    </div>
+
+                    <div class="tech-categories">
+
+                        <article class="tech-category">
+                            <div class="tech-category-heading">
+                                <span>01</span>
+                                <h3 data-i18n="tech_01">PROGRAMMING &amp; WEB</h3>
+                                <span class="category-code">DEV_CORE</span>
+                            </div>
+
+                            <div class="tech-tags">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>Python</span>
+                                <span>Liquid</span>
+                                <span>REST APIs</span>
+                            </div>
+                        </article>
+
+                        <article class="tech-category">
+                            <div class="tech-category-heading">
+                                <span>02</span>
+                                <h3 data-i18n="tech_02">ARTIFICIAL INTELLIGENCE</h3>
+                                <span class="category-code">AI_SYSTEMS</span>
+                            </div>
+
+                            <div class="tech-tags">
+                                <span>AI Tools</span>
+                                <span>AI APIs</span>
+                                <span>Automation</span>
+                                <span>Integrations</span>
+                            </div>
+                        </article>
+
+                        <article class="tech-category">
+                            <div class="tech-category-heading">
+                                <span>03</span>
+                                <h3 data-i18n="tech_03">DESIGN &amp; EXPERIENCE</h3>
+                                <span class="category-code">UX_INTERFACE</span>
+                            </div>
+
+                            <div class="tech-tags">
+                                <span>Figma</span>
+                                <span>UI Design</span>
+                                <span>UX Design</span>
+                                <span>Prototyping</span>
+                            </div>
+                        </article>
+
+                        <article class="tech-category">
+                            <div class="tech-category-heading">
+                                <span>04</span>
+                                <h3 data-i18n="tech_04">DEVELOPMENT ENVIRONMENT</h3>
+                                <span class="category-code">DEV_TOOLS</span>
+                            </div>
+
+                            <div class="tech-tags">
+                                <span>Visual Studio Code</span>
+                                <span>GitHub</span>
+                                <span>Shopify</span>
+                            </div>
+                        </article>
+
+                        <article class="tech-category">
+                            <div class="tech-category-heading">
+                                <span>05</span>
+                                <h3 data-i18n="tech_05">3D &amp; MANUFACTURING</h3>
+                                <span class="category-code">PHYSICAL_CORE</span>
+                            </div>
+
+                            <div class="tech-tags">
+                                <span>SolidWorks</span>
+                                <span>Blender</span>
+                                <span>FDM Printing</span>
+                                <span>PLA</span>
+                            </div>
+                        </article>
+
+                    </div>
+
+                </div>
+
+                <div class="tech-footer">
+                    <span data-i18n="tech_footer">CONTINUOUS LEARNING / EVOLUTION</span>
+                    <span>BLACKCORE TECHNOLOGY ECOSYSTEM</span>
+                </div>
+
+            </section>
+
+            <!-- RESUME -->
+            <section class="resume-section" id="resume">
+
+                <div class="section-heading">
+                    <span class="section-index" data-i18n="resume_index">05 / PROFESSIONAL PROFILE</span>
+                    <span class="section-line"></span>
+                    <span class="section-code" data-i18n="resume_code">CAREER DOCUMENTATION</span>
+                </div>
+
+                <div class="resume-layout">
+
+                    <div class="resume-content">
+                        <p class="resume-eyebrow" data-i18n="resume_eyebrow">PROFESSIONAL PROFILE</p>
+
+                        <h2>
+                            <span data-i18n="resume_title_1">KNOW THE</span><br>
+                            <span data-i18n="resume_title_2">PERSON BEHIND THE CORE.</span>
+                        </h2>
+
+                        <p data-i18n="resume_description">
+                            Conoce mi trayectoria, experiencia, conocimientos
+                            y enfoque profesional a través de mi currículum.
+                        </p>
+
+                        <div class="resume-buttons">
+                            <a
+                                href="assets/docs/BLACKCORE-CV-ES.pdf"
+                                class="primary-button"
+                                target="_blank"
+                                rel="noopener">
+                                <span data-i18n="resume_cv_es">CV EN ESPAÑOL</span> ↗
+                            </a>
+
+                            <a
+                                href="assets/docs/BLACKCORE-CV-EN.pdf"
+                                class="resume-secondary"
+                                target="_blank"
+                                rel="noopener">
+                                <span data-i18n="resume_cv_en">CV IN ENGLISH</span> ↗
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="resume-document">
+                        <div class="document-top">
+                            <span>BLACKCORE / PERSONNEL</span>
+                            <span>DOCUMENT 001</span>
+                        </div>
+
+                        <div class="document-symbol">B</div>
+
+                        <div class="document-title">
+                            <span data-i18n="resume_record">PROFESSIONAL RECORD</span>
+                            <h3>SOFTWARE<br>ENGINEERING</h3>
+                        </div>
+
+                        <div class="document-line"></div>
+
+                        <div class="document-details">
+                            <span data-i18n="resume_field">FIELD</span>
+                            <strong data-i18n="resume_ai">ARTIFICIAL INTELLIGENCE</strong>
+
+                            <span data-i18n="resume_position">POSITION</span>
+                            <strong>BLACKCORE DIRECTOR</strong>
+
+                            <span data-i18n="resume_document_type">DOCUMENT TYPE</span>
+                            <strong data-i18n="resume_cv">CURRICULUM VITAE</strong>
+                        </div>
+
+                        <div class="document-footer">
+                            <span data-i18n="brand_tagline">BEYOND THE KNOWN.</span>
+                            <span>BC / 001</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- CONTACT -->
+            <section class="contact-section" id="contact">
+
+                <div class="section-heading">
+                    <span class="section-index" data-i18n="contact_index">06 / CONTACT</span>
+                    <span class="section-line"></span>
+                    <span class="section-code" data-i18n="contact_code">INITIATE COMMUNICATION</span>
+                </div>
+
+                <div class="contact-intro">
+                    <p class="contact-eyebrow" data-i18n="contact_eyebrow">HAVE A PROJECT IN MIND?</p>
+
+                    <h2>
+                        <span data-i18n="contact_title_1">LET'S BUILD</span><br>
+                        <span data-i18n="contact_title_2">WHAT'S NEXT.</span>
+                    </h2>
+
+                    <p data-i18n="contact_description">
+                        Cuéntame qué necesitas desarrollar. Analizaremos tu idea
+                        y encontraremos una solución tecnológica adecuada.
+                    </p>
+                </div>
+
+                <div class="contact-layout">
+
+                    <form class="contact-form" id="contact-form">
+
+                        <div class="contact-form-heading">
+                            <span data-i18n="contact_form_title">PROJECT INQUIRY</span>
+                            <span>FORM / 001</span>
+                        </div>
+
+                        <label for="contact-name" data-i18n="contact_name">YOUR NAME</label>
+                        <input
+                            id="contact-name"
+                            name="name"
+                            type="text"
+                            placeholder="Escribe tu nombre" data-i18n-placeholder="contact_name_placeholder"
+                            required>
+
+                        <label for="contact-email" data-i18n="contact_email">EMAIL ADDRESS</label>
+                        <input
+                            id="contact-email"
+                            name="email"
+                            type="email"
+                            placeholder="correo@ejemplo.com" data-i18n-placeholder="contact_email_placeholder"
+                            required>
+
+                        <label for="contact-service" data-i18n="contact_service">SERVICE REQUIRED</label>
+                        <select id="contact-service" name="service" required>
+                            <option value="" data-i18n="contact_service_placeholder">Selecciona un servicio</option>
+                            <option value="software" data-i18n="contact_service_1">Software y desarrollo web</option>
+                            <option
+                                value="ai" data-i18n="contact_service_2">Inteligencia artificial y automatización</option>
+                            <option
+                                value="design" data-i18n="contact_service_3">Diseño UI/UX y comercio electrónico</option>
+                            <option value="3d" data-i18n="contact_service_4">Impresión 3D y fabricación</option>
+                            <option
+                                value="support" data-i18n="contact_service_5">Asesoría y soporte tecnológico</option>
+                            <option value="other" data-i18n="contact_service_6">Otro proyecto</option>
+                        </select>
+
+                        <label for="contact-message" data-i18n="contact_message">PROJECT DESCRIPTION</label>
+                        <textarea
+                            id="contact-message"
+                            name="message"
+                            rows="5"
+                            placeholder="Cuéntame brevemente sobre tu proyecto..." data-i18n-placeholder="contact_message_placeholder"
+                            required></textarea>
+
+                        <button type="submit" class="contact-submit">
+                            <span data-i18n="contact_submit">SEND INQUIRY THROUGH WHATSAPP</span> ↗
+                        </button>
+
+                        <p class="contact-privacy" data-i18n="contact_privacy">
+                            Al enviar, se abrirá WhatsApp con los datos de tu
+                            consulta.
+                            Podrás revisarlos antes de enviarlos.
+                        </p>
+
+                    </form>
+
+                    <aside class="contact-information">
+
+                        <div class="contact-info-block">
+                            <span data-i18n="contact_direct">DIRECT COMMUNICATION</span>
+                            <h3 data-i18n="contact_connect">Let's connect.</h3>
+                            <a
+                                href="https://wa.me/51966833653"
+                                target="_blank"
+                                rel="noopener noreferrer">
+                                +51 966 833 653 ↗
+                            </a>
+                        </div>
+
+                        <div class="contact-info-block">
+                            <span data-i18n="contact_location">LOCATION</span>
+                            <h3>Moyobamba, Peru</h3>
+                            <p data-i18n="contact_availability">Available for digital projects and technical services.</p>
+                        </div>
+
+                        <div class="contact-info-block">
+                            <span data-i18n="contact_division">BUSINESS DIVISION</span>
+                            <h3>BLACKCORE</h3>
+                            <p>Software · AI · Engineering</p>
+                        </div>
+
+                        <div class="contact-status">
+                            <span class="status-indicator"></span>
+                            OPEN TO PROJECT INQUIRIES
+                        </div>
+
+                    </aside>
+
+                </div>
+
+            </section>
+
+            <footer class="site-footer">
+                <a href="#" class="nav-brand">BLACK<span>CORE</span></a>
+                <span data-i18n="brand_tagline">BEYOND THE KNOWN.</span>
+                <span>© 2026 BLACKCORE. <span data-i18n="footer_rights">ALL RIGHTS RESERVED.</span></span>
+            </footer>
+
+        </main>
+
+        <script src="js/translations.js"></script>
+        <script src="js/navigation.js"></script>
+        <script src="js/intro.js" defer></script>
+        <script src="js/contact.js"></script>
+
+    </body>
+</html>
